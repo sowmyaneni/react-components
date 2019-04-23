@@ -55,7 +55,7 @@ class GroceryListItem extends React.Component {
 
     onMouseLeave(){
         this.setState({
-            hover: true
+            hover: false
         })
     }
 
@@ -63,7 +63,7 @@ class GroceryListItem extends React.Component {
     render(){
         var style = {
             textDecoration: this.state.done? 'line-through' : 'none',
-            fontWeight: this.state.hover? 'bold' : 'none'
+            fontWeight: this.state.hover? 'bold' : 'normal'
         };
         return(
             // <li onClick={this.props.onClick}>{this.props.item}</li>
